@@ -74,30 +74,30 @@ For training the data and predicting the target, algorithms used are -
 ### Priority Prediction - 
 The factors used are - 
 
-caller_id: identifier of the user affected;
-opened_by: identifier of the user who reported the incident;
-sys_created_by: identifier of the user who registered the incident;
-contact_type: categorical attribute that shows by what means the incident was reported;
-location: identifier of the location of the place affected;
-category: first-level description of the affected service;
-subcategory: second-level description of the affected service (related to the first level description, i.e., to category);
-impact: description of the impact caused by the incident (values: High, Medium, Low);
-urgency: description of the urgency informed by the user for the incident resolution (values: High, Medium, Low);
-notify: categorical attribute that shows whether notifications were generated for the incident;
+1. caller_id: identifier of the user affected;
+2. opened_by: identifier of the user who reported the incident;
+3. sys_created_by: identifier of the user who registered the incident;
+4. contact_type: categorical attribute that shows by what means the incident was reported;
+5. location: identifier of the location of the place affected;
+6. category: first-level description of the affected service;
+7. subcategory: second-level description of the affected service (related to the first level description, i.e., to category);
+8. impact: description of the impact caused by the incident (values: High, Medium, Low);
+9. urgency: description of the urgency informed by the user for the incident resolution (values: High, Medium, Low);
+10. notify: categorical attribute that shows whether notifications were generated for the incident;
 
 ### RFC Prediction -
 The factors used are - 
 
-reassignment_count: number of times the incident has the group or the support analysts changed;
-reopen_count: number of times the incident resolution was rejected by the caller;
-sys_mod_count: number of incident updates until that moment;
-made_sla: boolean attribute that shows whether the incident exceeded the target SLA;
-category: first-level description of the affected service;
-subcategory: second-level description of the affected service (related to the first level description, i.e., to category);
-assignment_group: identifier of the support group in charge of the incident;
-assigned_to: identifier of the user in charge of the incident;
-problem_id: identifier of the problem associated with the incident;
-priority: calculated by the system based on 'impact' and 'urgency';
+1. reassignment_count: number of times the incident has the group or the support analysts changed;
+2. reopen_count: number of times the incident resolution was rejected by the caller;
+3. sys_mod_count: number of incident updates until that moment;
+4. made_sla: boolean attribute that shows whether the incident exceeded the target SLA;
+5. category: first-level description of the affected service;
+6. subcategory: second-level description of the affected service (related to the first level description, i.e., to category);
+7. assignment_group: identifier of the support group in charge of the incident;
+8. assigned_to: identifier of the user in charge of the incident;
+9. problem_id: identifier of the problem associated with the incident;
+10. priority: calculated by the system based on 'impact' and 'urgency';
 
 ### Volume Forecasting - 
 ARIMA Model is for time-series prediction based on daily incident count
