@@ -106,3 +106,7 @@ ARIMA Model is for time-series prediction based on daily incident count
 1. For predicting Ticket Priority, Random Forest gives almost 99.8% accuracy.
 2. For predicting RFC, Random Forest gives almost 99.4% accuracy.
 3. ARIMA Model (p,d,q = 5,1,0) predicts the incident volume for the next 7 days.
+
+### Postman Collection
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/8e73bafeebf24a65e92a)
